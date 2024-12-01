@@ -1,0 +1,201 @@
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "./decoration-color.scss";
+@import "./fonts-style.scss";
+
+.price-repairs__title-container {
+  background: $background-title-color-1;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-top: $border-color-1;
+}
+
+.price-repairs__title {
+  width: 100%;
+  font-family: $font-family-2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7e7e82;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.price-repairs__swiper-wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 16px;
+}
+
+.price-repairs__swiper-slide {
+  padding: 16px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 260px;
+  height: 200px;
+  box-sizing: border-box;
+  background-color: $decoration-color-2;
+}
+
+.price-repairs__wrupper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.price-repairs__text-title {
+  font-family: $font-family-1;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #7e7e82;
+}
+
+.price-repairs__text-subtitle {
+  font-family: $font-family-2;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #1b1c21;
+}
+
+.price-repairs__text-buttom {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.price-repairs__button {
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.price-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.price-repairs__table {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .price-repairs__title-container {
+    max-width: 768px;
+
+    margin: 0 auto 31px auto;
+  }
+
+  .price-repairs__title {
+    padding-left: 16px;
+  }
+
+  .price-repairs__table-wrupper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .price-repairs__table {
+    display: flex;
+    padding-left: 0 !important;
+  }
+
+  .price-repairs__table {
+    transition: 0.2s;
+    padding-left: 30px;
+    margin-bottom: 24px;
+  }
+
+  .price-repairs__table-title-top,
+  .price-repairs__table-title-middle,
+  .price-repairs__table-title-buttom {
+    font-family: $font-family-1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $decoration-color-3;
+    text-align: left;
+    background-color: $decoration-color-5;
+    padding: 16px;
+  }
+
+  .price-repairs__table-title-buttom {
+    padding-left: 0;
+  }
+
+  .price-repairs__service-name,
+  .price-repairs__service-price,
+  .price-repairs__service-time,
+  .price-repairs__service-button {
+    font-family: $font-family-2;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #1b1c21;
+    text-align: left;
+    padding: 23px 16px;
+    background-color: $decoration-color-2;
+  }
+
+  .price-repairs__service-time {
+    padding-left: 0;
+  }
+
+  .price-repairs__service-button {
+    padding-left: 0;
+  }
+
+  .price-repairs__button-wrupper {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .price-repairs__swiper {
+    display: none;
+  }
+
+  .price-swiper-pagination {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .price-repairs__title-container {
+    max-width: 1120px;
+    margin: 0 auto 31px auto;
+  }
+
+  .price-repairs__title {
+    width: 100%;
+    align-items: start;
+    border-collapse: collapse;
+  }
+
+  .price-repairs__table {
+    max-width: 1120px;
+  }
+
+  .price-repairs__table-wrupper {
+    width: 100%;
+    max-width: none;
+    margin: 0 32px;
+  }
+
+  .price-repairs__service-name {
+    width: auto;
+  }
+
+  .price-repairs__service-price {
+    width: auto;
+  }
+
+  .price-repairs__service-time {
+    width: auto;
+  }
+}

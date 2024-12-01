@@ -1,0 +1,135 @@
+.footer__text {
+  font-family: $font-family-1;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #7e7e82;
+  margin-top: auto;
+}
+
+.footer__content-item {
+  text-align: center;
+}
+
+.footer {
+  padding-top: 16px;
+  border-top: $border-color-1;
+
+  .container {
+    max-width: 563px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.footer__content-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    max-width: 715px;
+    padding: 32px 24px 25px 24px;
+    margin: 51px auto 0 auto;
+
+    .container {
+      padding: 0;
+      width: 768px;
+      margin: 0;
+    }
+  }
+
+  .footer-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .footer__content-items {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: start;
+    gap: 35px;
+  }
+
+  .footer__content-items {
+    width: 715px;
+    text-align: start;
+  }
+
+  .footer__content-item {
+    text-align: start;
+  }
+
+  .footer__content-item:nth-child(1) {
+    max-width: 218px;
+  }
+
+  .footer__content-item:nth-child(2) {
+    max-width: 214px;
+  }
+
+  .footer__content-item:last-child {
+    max-width: 213px;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .footer {
+    max-width: 1054px;
+    padding: 32px 24px 25px 24px;
+    margin: 51px auto 0 auto;
+
+    .container {
+      padding: 0;
+      width: 1120px;
+      margin: 0;
+    }
+  }
+
+  .footer-wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .footer__content-items {
+    width: 1054px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 146px;
+  }
+
+  .footer__content-items {
+    width: 1054px;
+    text-align: start;
+  }
+
+  .footer__content-item:nth-child(1) {
+    max-width: 218px;
+  }
+
+  .footer__content-item:nth-child(2) {
+    max-width: 214px;
+  }
+
+  .footer__content-item:last-child {
+    max-width: 330px;
+    text-align: end;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    position: relative;
+    left: 320px;
+    margin: 51px 0 0 0;
+  }
+}

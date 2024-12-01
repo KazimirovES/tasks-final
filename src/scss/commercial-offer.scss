@@ -1,0 +1,96 @@
+@import "./decoration-color.scss";
+@import "./fonts-style.scss";
+
+.commercial-offer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+  margin-left: 16px;
+  margin-bottom: 40px;
+}
+
+.commercial-offer-text {
+  width: 80%;
+  font-family: $font-family-2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.commercial-offer-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.commercial-offer-button-text {
+  font-family: $font-family-1;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
+  color: #1b1c21;
+  position: relative;
+  width: 80%;
+  max-width: 466px;
+}
+
+.commercial-offer-button-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: -3px;
+  right: 45%;
+}
+
+@media screen and (min-width: 768px) {
+  .commercial-offer-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .commercial-offer-button {
+    padding-left: 24px;
+  }
+
+  .commercial-offer-text {
+    width: 60%;
+    font-family: $font-family-2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 24px;
+  }
+
+  .commercial-offer-button-text {
+    position: relative;
+    width: 100%;
+  }
+
+  .commercial-offer-button-icon {
+    position: absolute;
+    bottom: -1px;
+    left: 100%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .commercial-offer-wrapper {
+    padding-left: 32px;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .commercial-offer-text {
+    width: 38%;
+    padding-left: 0px;
+  }
+
+  .commercial-offer-button {
+    padding-left: 0px;
+  }
+}
