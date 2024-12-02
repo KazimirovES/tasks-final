@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "css-loader": "^7.1.2",
     "cssnpm": "^1.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.2.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "install": "^0.13.0",
