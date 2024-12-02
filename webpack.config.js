@@ -3,7 +3,6 @@ const { default: test } = require("node:test");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
-const loader = require("sass-loader");
 
 module.exports = {
   entry: "./src/index.js",
@@ -17,10 +16,7 @@ module.exports = {
       template: "./src/index.html",
     }),
     new CopyWebpackPlugin({
-      patterns: [
-        { from: "./src/img", to: "img" },
-        /* { from: "./src/img/icons", to: "img/icons" }, */
-      ],
+      patterns: [{ from: "./src/img", to: "img" }],
     }),
     new MiniCssExtractPlugin({
       filename: "style.css",
@@ -46,31 +42,16 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
 
-      /* {
-        test: /\.html$/,
-        use: "html-loader",
-      }, */
-
       {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
 
-      ,
-      /* {
-        test: /\.scss$/,
-        use: [
-          {loader
-            MiniCssExtractPlugin.loader}
-             "style-loader" 
-             /* "css-loader" */ /*    , "sass-loader"],
-      }, */
-
       {
         test: /\.{ttf|eot|woff|woff2}$/,
         loader: "file-loader",
         options: {
-          name: "fonts/[name].[ext]", // Установка пути для шрифтов
+          name: "fonts/[name].[ext]",
         },
       },
     ],
